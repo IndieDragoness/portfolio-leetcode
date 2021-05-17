@@ -23,11 +23,11 @@ def calculate_trapped_water(elevation_array):
 
 if __name__ == "__main__":
     # W: Where water should exist.
-    #              _   
-    #      _      | |_   _
-    #  _  | |W W W|   |W| |_
-    # | |W|   |W|           |
-    elevation_array = [0,1,0,2,1,0,1,3,2,1,2,1]
+    #              _         _   _
+    #      _      | |W W W W| |W| |
+    #  _  | |W W W|   |W| |W| |W| |
+    # | |W|   |W|                 |
+    elevation_array = [0,1,0,2,1,0,1,3,2,1,2,1,3,1,3]
 
     water_volume = calculate_trapped_water(elevation_array)
     print("Calculated water Volume: {}".format(water_volume))
